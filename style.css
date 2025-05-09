@@ -54,7 +54,7 @@ body {
   row-gap: var(--300);
   background-color: var(--white);
   width: 320px;
-  height: 499px;
+  min-height: 499px;
   padding: var(--200) var(--200) var(--500) var(--200);
   border-radius: 20px;
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
@@ -71,7 +71,7 @@ body {
   text-align: center;
 }
 
-.text :nth-child(1) {
+.text h1 {
   font-size: var(--outfit-bold-size);
   line-height: var(--outfit-bold-line-height);
   letter-spacing: var(--outfit-bold-letter-spacing);
@@ -79,7 +79,7 @@ body {
   color: var(--slate-900);
 }
 
-.text :nth-child(2) {
+.text p {
   font-size: var(--outfit-regular-size);
   line-height: var(--outfit-regular-line-height);
   letter-spacing: var(--outfit-regular-letter-spacing);
