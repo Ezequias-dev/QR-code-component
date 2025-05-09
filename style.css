@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* STYLE GUIDE */
+
+:root {
+  /* COLOR */
+
+  /* Slate */
+  --slate-900: rgb(31, 49, 79);
+  --slate-500: rgb(104, 119, 141);
+  --slate-300: rgb(213, 225, 239);
+
+  /* White */
+  --white: rgb(255, 255, 255);
+
+  /* TYPOGRAPHY */
+
+  /* Text Preset 1 */
+  --outfit-bold-size: 22px;
+  --outfit-bold-line-height: 120%;
+  --outfit-bold-letter-spacing: 0px;
+
+  /* Text Preset 2 */
+  --outfit-regular-size: 15px;
+  --outfit-regular-line-height: 140%;
+  --outfit-regular-letter-spacing: 0.2px;
+
+  /* SPACING */
+
+  --500: 40px;
+  --300: 24px;
+  --200: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--slate-300);
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  font-family: "Outfit", sans-serif;
+}
+
+.content {
+  display: grid;
+  row-gap: var(--300);
+  background-color: var(--white);
+  width: 320px;
+  height: 499px;
+  padding: var(--200) var(--200) var(--500) var(--200);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+}
+
+.content img {
+  border-radius: 10px;
+}
+
+.text {
+  display: grid;
+  row-gap: var(--200);
+  padding: 0 var(--200);
+}
+
+.text :nth-child(1) {
+  font-size: var(--outfit-bold-size);
+  line-height: var(--outfit-bold-line-height);
+  letter-spacing: var(--outfit-bold-letter-spacing);
+  font-weight: bold;
+  color: var(--slate-900);
+}
+
+.text :nth-child(2) {
+  font-size: var(--outfit-regular-size);
+  line-height: var(--outfit-regular-line-height);
+  letter-spacing: var(--outfit-regular-letter-spacing);
+  color: var(--slate-500);
+}
